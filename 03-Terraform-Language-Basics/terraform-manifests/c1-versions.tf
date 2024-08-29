@@ -1,6 +1,6 @@
 # Terraform Settings Block
 terraform {
-  required_version = ">=5.33.0"
+  required_version = ">=1.9.0"
   required_providers {
     google = {
       source = "hashicorp/google"
