@@ -6,7 +6,7 @@ provider "google" {
 
 # Resource: VPC
 resource "google_compute_network" "VPC-GCPTerraform" {
-  name                    = "VPC-GCPTerraform"
+  name                    = "gcpterraform"
   auto_create_subnetworks = false   
 }
 
