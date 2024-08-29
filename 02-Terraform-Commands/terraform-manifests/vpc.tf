@@ -1,12 +1,12 @@
 # Terraform Provider Configuration: google
 provider "google" {
-  project = "Google terraform project"
-  region = "us-central1"
+  project = "my-google-project"  # Replace with your actual project ID
+  region  = "us-central1"
 }
 
 # Resource: VPC
 resource "google_compute_network" "VPC-GCPTerraform" {
-  name = "VPC-GCPTerraform"
+  name                    = "VPC-GCPTerraform"
   auto_create_subnetworks = false   
 }
 
@@ -15,6 +15,6 @@ resource "google_compute_subnetwork" "my-GCPTerraform" {
   name          = "subnet1"
   region        = "us-central1"
   ip_cidr_range = "10.128.0.0/20"
-  network       = google_compute_network.myvpc.id  // GET VPC ID
+  network       = google_compute_network.VPC-GCPTerraform.id  # Correct reference to VPC ID
 }
 
