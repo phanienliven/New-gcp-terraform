@@ -13,7 +13,7 @@ resource "google_compute_instance" "myapp1" {
   }
 
   # Install Webserver
-  metadata_startup_script = file("${path.module}/webserver-install.sh")
+  metadata_startup_script = file("${path.module}/app1-webserver-install.sh")
 
   network_interface {
     subnetwork = google_compute_subnetwork.mysubnet.id 
