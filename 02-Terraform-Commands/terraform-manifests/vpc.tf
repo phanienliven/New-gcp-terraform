@@ -1,6 +1,6 @@
 # Terraform Provider Configuration: google
 provider "google" {
-  project = "Google terraform project"  
+  project = "euphoric-quanta-433916-q7"  
   region  = "us-central1"
 }
 
