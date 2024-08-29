@@ -11,7 +11,7 @@ resource "google_compute_network" "VPC-GCPTerraform" {
 }
 
 # Resource: Subnet
-resource "google_compute_subnetwork" "mysubnet" {
+resource "google_compute_subnetwork" "my-GCPTerraform" {
   name          = "subnet1"
   region        = "us-central1"
   ip_cidr_range = "10.128.0.0/20"
