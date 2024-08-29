@@ -1,7 +1,6 @@
 # Terraform Provider Configuration: google
 provider "google" {
-  project = "Google terraform project
-"  # Replace with your actual project ID
+  project = "Google terraform project"  
   region  = "us-central1"
 }
 
